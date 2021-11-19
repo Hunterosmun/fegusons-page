@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+
+.game {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.game > div {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.game > div::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.wall {
+  background-color: gray;
+}
+
+.floor {
+  background-color: greenyellow;
+}
+
+.key::after {
+  content: 'Key';
+}
+
+.flag {
+  background-color: red;
+}
+
+.warp::after {
+  content: 'Warp';
+}
+
+.door::after {
+  content: 'Door';
+}
+
+.player {
+  background: no-repeat center/80% url('dude.png');
+  background-position-x: 7px;
+  background-color: greenyellow;
+}
+
+main {
+  background-color: lightgray;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
